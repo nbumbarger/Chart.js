@@ -20,7 +20,21 @@ require('./core/core.legend')(Chart);
 require('./core/core.interaction')(Chart);
 require('./core/core.tooltip')(Chart);
 
-<<<<<<< HEAD
+require('./scales/scale.linearbase.js')(Chart);
+require('./scales/scale.category')(Chart);
+require('./scales/scale.linear')(Chart);
+require('./scales/scale.logarithmic')(Chart);
+require('./scales/scale.radialLinear')(Chart);
+require('./scales/scale.time')(Chart);
+
+require('./elements/element.arc')(Chart);
+require('./elements/element.errorBar')(Chart);
+require('./elements/element.line')(Chart);
+require('./elements/element.point')(Chart);
+require('./elements/element.rectangle')(Chart);
+
+// Controllers must be loaded after elements
+// See Chart.core.datasetController.dataElementType
 require('./controllers/controller.bar')(Chart);
 require('./controllers/controller.barError')(Chart);
 require('./controllers/controller.bubble')(Chart);
@@ -29,36 +43,6 @@ require('./controllers/controller.line')(Chart);
 require('./controllers/controller.lineError')(Chart);
 require('./controllers/controller.polarArea')(Chart);
 require('./controllers/controller.radar')(Chart);
-=======
-require('./elements/element.arc')(Chart);
-require('./elements/element.line')(Chart);
-require('./elements/element.point')(Chart);
-require('./elements/element.rectangle')(Chart);
->>>>>>> 1ca0ffb5d5b6c2072176fd36fa85a58c483aa434
-
-require('./scales/scale.linearbase.js')(Chart);
-require('./scales/scale.category')(Chart);
-require('./scales/scale.linear')(Chart);
-require('./scales/scale.logarithmic')(Chart);
-require('./scales/scale.radialLinear')(Chart);
-require('./scales/scale.time')(Chart);
-
-<<<<<<< HEAD
-require('./elements/element.arc')(Chart);
-require('./elements/element.errorBar')(Chart);
-require('./elements/element.line')(Chart);
-require('./elements/element.point')(Chart);
-require('./elements/element.rectangle')(Chart);
-=======
-// Controllers must be loaded after elements
-// See Chart.core.datasetController.dataElementType
-require('./controllers/controller.bar')(Chart);
-require('./controllers/controller.bubble')(Chart);
-require('./controllers/controller.doughnut')(Chart);
-require('./controllers/controller.line')(Chart);
-require('./controllers/controller.polarArea')(Chart);
-require('./controllers/controller.radar')(Chart);
->>>>>>> 1ca0ffb5d5b6c2072176fd36fa85a58c483aa434
 
 require('./charts/Chart.Bar')(Chart);
 require('./charts/Chart.BarError')(Chart);
